@@ -121,9 +121,9 @@ DirectoryIndex index.php index.html index.htm
   RewriteRule ^ https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301] 
 
    #  www.dkms.de => www.dkms.de/de
-  RewriteCond %{HTTP_HOST} (dkaskarelis\.eu)$ [NC]
-  RewriteCond %{REQUEST_URI} ^\/$
-  RewriteRule (.*) http://%{HTTP_HOST}/de [L,R=301]
+#  RewriteCond %{HTTP_HOST} (dkaskarelis\.eu)$ [NC]
+#  RewriteCond %{REQUEST_URI} ^\/$
+#  RewriteRule (.*) http://%{HTTP_HOST}/de [L,R=301]
 
 
  
