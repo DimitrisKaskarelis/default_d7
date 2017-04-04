@@ -118,7 +118,7 @@ DirectoryIndex index.php index.html index.htm
   
 
   RewriteCond %{HTTP_HOST} ^(dkaskarelis\.eu|dkms\.pl|dkms\.es|dkms\.org|dkms\.org.uk)$ [NC]
-  RewriteRule ^ https://www.eedkaskarelis.prod.acquia-sites.com%{REQUEST_URI} [L,R=301] 
+  RewriteRule ^ https://eedkaskarelis.prod.acquia-sites.com%{REQUEST_URI} [L,R=301] 
  
   # Rules to correctly serve gzip compressed CSS and JS files.
   # Requires both mod_rewrite and mod_headers to be enabled.
