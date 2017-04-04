@@ -117,8 +117,8 @@ DirectoryIndex index.php index.html index.htm
   RewriteRule ^ index.php [L]
   
 
-#  RewriteCond %{HTTP_HOST} ^(dkaskarelis\.eu|dkms\.pl|dkms\.es|dkms\.org|dkms\.org.uk)$ [NC]
-#  RewriteRule ^ https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301] 
+  RewriteCond %{HTTP_HOST} ^(dkaskarelis\.eu|dkms\.pl|dkms\.es|dkms\.org|dkms\.org.uk)$ [NC]
+  RewriteRule ^ http://eedkaskarelis.prod.acquia-sites.com%{REQUEST_URI} [L,R=301] 
 
    #  www.dkms.de => www.dkms.de/de
 #  RewriteCond %{HTTP_HOST} (dkaskarelis\.eu)$ [NC]
