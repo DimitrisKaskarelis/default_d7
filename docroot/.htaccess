@@ -119,6 +119,13 @@ DirectoryIndex index.php index.html index.htm
 
   RewriteCond %{HTTP_HOST} ^(dkaskarelis\.eu|dkms\.pl|dkms\.es|dkms\.org|dkms\.org.uk)$ [NC]
   RewriteRule ^ https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301] 
+
+   #  www.dkms.de => www.dkms.de/de
+  RewriteCond %{HTTP_HOST} (dkaskarelis\.eu)$ [NC]
+  RewriteCond %{REQUEST_URI} ^\/$
+  RewriteRule (.*) http://%{HTTP_HOST}/de [L,R=301]
+
+
  
   # Rules to correctly serve gzip compressed CSS and JS files.
   # Requires both mod_rewrite and mod_headers to be enabled.
