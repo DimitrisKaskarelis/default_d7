@@ -629,7 +629,7 @@ $conf['404_fast_html'] = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
  */
 // $conf['allow_css_double_underscores'] = TRUE;
 
-drupal_add_http_header("Caching-Enforcement","X-Acquia-No-301-404", TRUE);
+drupal_add_http_header("X-Acquia-No-301-404-Caching-Enforcement","X-Acquia-No-301-404-Caching-Enforcement", TRUE);
 
 // On Acquia Cloud, this include file configures Drupal to use the correct
 // database in each site environment (Dev, Stage, or Prod). To use this
