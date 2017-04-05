@@ -116,12 +116,11 @@ DirectoryIndex index.php index.html index.htm
   RewriteCond %{REQUEST_URI} !=/favicon.ico
   RewriteRule ^ index.php [L]
   
-
-  RewriteCond %{HTTP_HOST} ^(dkaskarelis\.eu|dkms\.pl|dkms\.es|dkms\.org|dkms\.org.uk)$ [NC]
-  RewriteRule ^ https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-
   # redirect all trailing slash urls to their non trailing slash counterparts
   RedirectMatch 301 ^/(.*)/$ /$1
+
+  RewriteCond %{HTTP_HOST} ^(dkaskarelis\.eu|dkms\.pl|dkms\.es|dkms\.org|dkms\.org.uk)$ [NC]
+  RewriteRule ^ http://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
   # Redirect all traffic on http://www.[dkms|deletebloodcancer].xx to https
   # RewriteCond %{HTTPS} off
