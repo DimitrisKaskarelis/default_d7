@@ -117,7 +117,7 @@ DirectoryIndex index.php index.html index.htm
   RewriteRule ^ index.php [L]
   
   # redirect all trailing slash urls to their non trailing slash counterparts
-  RedirectMatch 301 ^/(.*)/$ /$1
+  #RedirectMatch 301 ^/(.*)/$ /$1
 
   RewriteCond %{HTTP_HOST} ^(dkaskarelis\.eu|dkms\.pl|dkms\.es|dkms\.org|dkms\.org.uk)$ [NC]
   RewriteRule ^ http://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
@@ -129,9 +129,9 @@ DirectoryIndex index.php index.html index.htm
   # RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 
    #  www.dkms.de => www.dkms.de/de
- # RewriteCond %{HTTP_HOST} (dkaskarelis\.eu)$ [NC]
- # RewriteCond %{REQUEST_URI} ^\/$
- # RewriteRule (.*) http://%{HTTP_HOST}/de [L,R=301]
+  RewriteCond %{HTTP_HOST} (dkaskarelis\.eu)$ [NC]
+  RewriteCond %{REQUEST_URI} ^\/$
+  RewriteRule (.*) http://%{HTTP_HOST}/de [L,R=301]
  
   # Rules to correctly serve gzip compressed CSS and JS files.
   # Requires both mod_rewrite and mod_headers to be enabled.
