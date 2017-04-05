@@ -2,6 +2,190 @@
 # Apache/PHP/Drupal settings:
 #
 
+# Redirects old site german, no Drupal, just 301
+Redirect 301 /home/de http://www.dkms.de/de
+Redirect 301 /de/spender-werden/registrierung.html http://www.dkms.de/de/spender-werden
+Redirect 301 /registrierung http://www.dkms.de/de/spender-werden
+Redirect 301 /de/service-hilfe/geld-spenden.html http://www.dkms.de/de/geld-spenden
+Redirect 301 /geldspende http://www.dkms.de/de/geld-spenden
+Redirect 301 /geldspenden http://www.dkms.de/de/geld-spenden
+Redirect 301 /de/registrierte-spender/adresse-aendern.html https://www.dkms.de/de/forms/de_DE/default/addressupdate
+Redirect 301 /adresse https://www.dkms.de/de/forms/de_DE/default/addressupdate
+Redirect 301 /de/spender-werden/ueberblick.html http://www.dkms.de/de/blutkrebs
+Redirect 301 /de/spender-werden/grundlegende-informationen.html http://www.dkms.de/de/blutkrebs
+Redirect 301 /de/spender-werden/spender-wissen.html http://www.dkms.de/de/blutkrebs
+Redirect 301 /de/presse/kampagnen.html http://www.dkms.de/de/presse-material
+Redirect 301 /de/presse/presse-downloads/textbausteine.html http://www.dkms.de/de/presse-material
+Redirect 301 /de/kontakt.html http://www.dkms.de/de/kontakt
+# Redirect 301 /kontakt http://www.dkms.de/de/kontakt # see this all the way at the bottom of redirects, moved to avoid overwriting polish redirect
+Redirect 301 /de/schulen-vereine-kooperationen/ueberblick.html http://www.dkms.de/de/schulen
+Redirect 301 /de/service-hilfe/forum.html http://www.dkms.de/de
+Redirect 301 /de/service-hilfe/aktionskalender.html http://www.dkms.de/de/aktionskalender-liste
+Redirect 301 /de/aerzte/anmeldung-bestellung.html http://www.dkms.de/de/weitere-moeglichkeiten-zu-helfen#Ärzte_mit_engagement
+Redirect 301 /aerzte http://www.dkms.de/de/weitere-moeglichkeiten-zu-helfen#Ärzte_mit_engagement
+Redirect 301 /de/service-hilfe/informationsmaterial.html http://www.dkms.de/de/informationsmaterial
+Redirect 301 /de/news.html http://www.dkms.de/de
+Redirect 301 /de/firmen/was-ihre-firma-tun-kann.html http://www.dkms.de/de/unternehmen
+Redirect 301 /de/firmen/ueberblick.html http://www.dkms.de/de/unternehmen
+Redirect 301 /unternehmen http://www.dkms.de/de/unternehmen
+Redirect 301 /de/service-hilfe/lexikon.html http://www.dkms.de/de/faq
+Redirect 301 /email https://www.dkms.de/de/forms/de_DE/default/mailing
+#Redirect 301 /paypal https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=JJPB5QV3RNSVL
+Redirect 301 /geldauflagen http://dkms.de/de/geldauflagen
+Redirect 301 /de/ueber-uns/ueber-uns/stellenangebote.html http://www.dkms.de/de/stellenangebote
+Redirect 301 /stellenangebote http://www.dkms.de/de/stellenangebote
+Redirect 301 /bzaek http://www.dkms.de/de/bzaek
+Redirect 301 /spendeformular http://www.dkms.de/de/bzaek
+Redirect 301 /michelle https://www.dkms.de/de/forms/de_DE/default/addressupdate
+Redirect 301 /de/impressum.html http://www.dkms.de/de/impressum
+Redirect 301 /infobestellung https://www.dkms.de/de/forms/de_DE/default/infoorder
+Redirect 301 /tr/bagiscisi-olmak/kayit.html http://www.dkms.de/de/spender-werden
+Redirect 301 /de/ueber-uns/ueber-uns/unsere-geschichte.html http://www.dkms.de/de/über-die-dkms
+Redirect 301 /de/(media/2486) http://www.dkms.de/de/media/2486
+Redirect 301 /wbcd http://www.dkms.de/worldbloodcancerday
+
+#Redirect old files that have no new version to 410 code (content gone)
+#Should only be used for statics, pages should be redirected with a 301
+Redirect 410 /sites/dkms.de/files/security_review_test.php
+Redirect 410 /fileadmin
+Redirect 410 /typo3temp
+Redirect 410 /bundles/dkmsannualmailing/images/confirm_visual.png
+Redirect 410 /typo3temp/pics/DKMS_Logo_2013_100x100px_fb9656b3d4.png
+Redirect 410 /uploads/pics/Mails/googleplus20x20.jpg
+Redirect 410 /uploads/pics/Mails/social_email.gif
+
+#redirects for old Polish website:
+Redirect 301 /choose.html http://www.dkms.pl
+Redirect 301 /rejestracja.dkms.pl/addresschange/ https://www.dkms.pl/pl/forms/pl_PL/default/addressupdate
+Redirect 301 /no_cache/kontakt/formularz/index.html http://www.dkms.pl/pl/kontakt
+Redirect 301 /no_cache/pacjenci-rodzina-i-przyjaciele/planowanie-dnia-dawcy/kontakt/index.html http://www.dkms.pl/pl/pacjenci-rodziny
+Redirect 301 /global-pages/najczesciej-zadawane-pytania/index.html http://www.dkms.pl/pl/faq
+#Redirect 301 /index.php http://www.dkms.pl
+Redirect 301 /noflash.html http://www.dkms.pl
+Redirect 301 /global-pages/news/index.html http://www.dkms.pl/pl/historie-dawcow
+Redirect 301 /dawca/index.html http://www.dkms.pl/pl/zostan-dawca
+Redirect 301 /dawca/kalendarz-dni-dawcy/index.html http://www.dkms.pl/pl/dni-dawcy
+Redirect 301 /dawca/najczesciej-zadawane-pytania/index.html http://www.dkms.pl/pl/faq
+Redirect 301 /dawca/najczesciej-zadawane-pytania/jak-zostaje-sie-dawca-szpiku/index.html http://www.dkms.pl/pl/faq
+Redirect 301 /dawca/opisy-akcji-2011/lilou-dkms/ http://www.dkms.pl/pl/partnerzy
+Redirect 301 /dawca/opisy-dni-dawcy/ http://www.dkms.pl/pl/historie-dawcow
+Redirect 301 /dawca/przywileje-dawcy/index.html http://www.dkms.pl/pl/zostan-dawca
+Redirect 301 /dawca/rejestracja/index.html http://www.dkms.pl/pl/zostan-dawca
+Redirect 301 /dawca/rejestracja/warunki/index.html http://www.dkms.pl/pl/zostan-dawca
+Redirect 301 /dawca/wsparcie-finansowe/index.html http://www.dkms.pl/pl/przekaz-darowizne
+Redirect 301 /dawca http://www.dkms.pl/pl/zostan-dawca
+Redirect 301 /firmy/firmy-wspierajace-dkms/index.html http://www.dkms.pl/pl/partnerzy
+Redirect 301 /firmy/index.html http://www.dkms.pl/pl/firma
+Redirect 301 /firmy/inne-instytucje-wspierajace-dkms/index.html http://www.dkms.pl/pl/firma
+Redirect 301 /firmy/organizacja-dnia-dawcy-w-firmie/index.html http://www.dkms.pl/pl/firma
+Redirect 301 /footer/kontakt/index.html http://www.dkms.pl/pl/kontakt
+Redirect 301 /footer/ochrona-danych/index.html http://www.dkms.pl/pl/polityka-prywatnosci
+Redirect 301 /footer/stopka/index.html http://www.dkms.pl/pl/kontakt
+Redirect 301 /historie-dawcow/index.html http://www.dkms.pl/pl/historie-dawcow
+Redirect 301 /inne/podaruj-jeden-procent/index.html http://www.dkms.pl/pl/1procent
+Redirect 301 /kontakt/index.html http://www.dkms.pl/pl/kontakt
+Redirect 301 /lekarze/index.html http://www.dkms.pl/pl/pomoc
+Redirect 301 /media/informacje-dla-mediow/index.html http://www.dkms.pl/pl/media
+Redirect 301 /o-nas/index.html http://www.dkms.pl/pl/o-dkms
+Redirect 301 /pacjenci-rodzina-i-przyjaciele/index.html http://www.dkms.pl/pl/pacjenci-rodziny
+Redirect 301 /pacjenci-rodzina-i-przyjaciele/najczesciej-zadawane-pytania/index.html http://www.dkms.pl/pl/faq
+Redirect 301 /pacjenci-rodzina-i-przyjaciele/planowanie-dnia-dawcy/index.html http://www.dkms.pl/pl/pacjenci-rodziny
+Redirect 301 /pacjenci-rodzina-i-przyjaciele/transplantacje/index.html http://www.dkms.pl/pl/pacjenci-rodziny
+Redirect 301 /szkoly-i-inne-organizacje/index.html http://www.dkms.pl/pl/szkoly-organizacje
+Redirect 301 /szkoly-i-inne-organizacje/inne-organizacje/index.html http://www.dkms.pl/pl/szkoly-organizacje
+Redirect 301 /szkoly-i-inne-organizacje/organizacje-non-profit/index.html http://www.dkms.pl/pl/szkoly-organizacje
+Redirect 301 /szkoly-i-inne-organizacje/portale-www/index.html http://www.dkms.pl/pl/szkoly-organizacje
+Redirect 301 /znani-i-lubiani-z-nami/index.html http://www.dkms.pl
+
+Redirect 301 /become-a-donor/basic-information http://www.deletebloodcancer.org.uk/en/register-now
+Redirect 301 /become-a-donor/get-informed http://www.deletebloodcancer.org.uk/en/about-blood-cancer
+Redirect 301 /become-a-donor/register http://www.deletebloodcancer.org.uk/en/register-now
+Redirect 301 /become-a-donor http://www.deletebloodcancer.org.uk/en/register-now
+#Redirect 301 /news http://www.deletebloodcancer.org.uk/en/stories
+Redirect 301 /about-us/about-us/our-story http://www.deletebloodcancer.org.uk/en/content/about-delete-blood-cancer-uk
+Redirect 301 /service/faq/general-questions http://www.deletebloodcancer.org.uk/en/frequently-asked-questions
+Redirect 301 /support/ways-you-can-help http://www.deletebloodcancer.org.uk/en/get-involved
+Redirect 301 /support/support-the-cause http://www.deletebloodcancer.org.uk/en/get-involved
+Redirect 301 /im-a-match/about-the-collection-process http://www.deletebloodcancer.org.uk/en/I-am-a-match
+Redirect 301 /im-a-match/overview http://www.deletebloodcancer.org.uk/en/I-am-a-match
+Redirect 301 /im-a-match/being-a-donor http://www.deletebloodcancer.org.uk/en/I-am-a-match
+Redirect 301 /about-us/about-us/partnerships http://www.deletebloodcancer.org.uk/en/get-involved
+Redirect 301 /i-am-already-registered/overview http://www.deletebloodcancer.org.uk/en/frequently-asked-questions
+Redirect 301 /i-am-already-registered/knowledge-zone http://www.deletebloodcancer.org.uk/en/frequently-asked-questions
+Redirect 301 /i-am-a-patient/overview http://www.deletebloodcancer.org.uk/en/about-blood-cancer
+Redirect 301 /i-am-a-patient/personal-stories http://www.deletebloodcancer.org.uk/en/stories
+Redirect 301 /im-a-match/useful-resources http://www.deletebloodcancer.org.uk/en/I-am-a-match
+Redirect 301 /support/support-the-cause.html http://www.deletebloodcancer.org.uk/en/donate-money
+
+Redirect 301 /about.html http://www.deletebloodcancer.org/en/about
+Redirect 301 /about/credentials.html http://www.deletebloodcancer.org/en/credentials
+Redirect 301 /about/supporters.html http://www.deletebloodcancer.org/en/about/sponsors
+Redirect 301 /about/transport-services.html http://www.deletebloodcancer.org/en/transport
+Redirect 301 /about/update-your-info.html http://www.deletebloodcancer.org/en/update-your-information
+Redirect 301 /about-us.html http://www.deletebloodcancer.org/en/about
+Redirect 301 /about-us/credentials.html http://www.deletebloodcancer.org/en/credentials
+Redirect 301 /about-us/executive-team.html http://www.deletebloodcancer.org/en/about
+Redirect 301 /about-us/our-story.html http://www.deletebloodcancer.org/en/about
+Redirect 301 /about-us/transport-services.html http://www.deletebloodcancer.org/en/transport
+Redirect 301 /about-us/transport-services/ http://www.deletebloodcancer.org/en/transport
+Redirect 301 /about-us/update-your-info.html http://www.deletebloodcancer.org/en/update-your-information
+Redirect 301 /college/get-involved.html http://www.deletebloodcancer.org/en/get-involved/college
+Redirect 301 /contact.html http://www.deletebloodcancer.org/en/contact
+Redirect 301 /drives-faq.html http://www.deletebloodcancer.org/en/faq
+Redirect 301 /drives-faq/calendar.html http://www.deletebloodcancer.org/en/content/donor-drive-map
+Redirect 301 /drives-faq/general-questions/general-questions.html http://www.deletebloodcancer.org/en/faq
+Redirect 301 /faq.html http://www.deletebloodcancer.org/en/faq
+Redirect 301 /faq/general-questions.html http://www.deletebloodcancer.org/en/faq
+Redirect 301 /fundraise/support-dkms.html http://www.deletebloodcancer.org/en/give
+Redirect 301 /gala.html http://www.deletebloodcancer.org/en
+Redirect 301 /get-educated/learn-more.html http://www.deletebloodcancer.org/en/about-blood-cancer
+Redirect 301 /home.html http://www.deletebloodcancer.org/en
+Redirect 301 /index.php?id=1134&MP=547-579 http://www.deletebloodcancer.org/en/about/careers
+Redirect 301 /jobs.html http://www.deletebloodcancer.org/en/about/careers
+Redirect 301 /legal.html http://www.deletebloodcancer.org/en
+Redirect 301 /match/donor-update.html https://secureforms.deletebloodcancer.org/en_US/default/addressupdate?match=1
+Redirect 301 /match/i-am-a-match.html http://www.deletebloodcancer.org/en/donors
+Redirect 301 /news.html http://www.deletebloodcancer.org/en/press
+Redirect 301 /news.html?tx_gopageuebersicht_piNews%5Bpage%5D=1&cHash=2aa2b2545b9528e55162f5bb2a645be0 http://www.deletebloodcancer.org/en/press
+Redirect 301 /news.html?tx_gopageuebersicht_piNews%5Bpage%5D=2&cHash=46a17e90423f16024af14dc7a8f8a32d http://www.deletebloodcancer.org/en/press
+Redirect 301 /news.html?tx_gopageuebersicht_piNews%5Bpage%5D=3&cHash=ed934ee42ced9b80b7127b5c8ab46434 http://www.deletebloodcancer.org/en/press
+Redirect 301 /news.html?tx_gopageuebersicht_piNews%5Bpage%5D=4&cHash=1e461eaa455ac7c6c3b8df3f87e71b2e http://www.deletebloodcancer.org/en/press
+Redirect 301 /privacy.html http://www.deletebloodcancer.org/en/privacy-policy
+Redirect 301 /recruit/register-others.html http://www.deletebloodcancer.org/en/get-involved
+Redirect 301 /register/register-now.html http://www.deletebloodcancer.org/en/register
+Redirect 301 /sitemap/161.html http://www.deletebloodcancer.org/en
+Redirect 301 /swabparty http://www.deletebloodcancer.org/en/get-involved
+Redirect 301 /swabparty.html http://www.deletebloodcancer.org/en/get-involved
+Redirect 301 /swabparty/ http://www.deletebloodcancer.org/en/get-involved
+Redirect 301 /terms.html http://www.deletebloodcancer.org/en
+Redirect 301 /transport-services http://www.deletebloodcancer.org/en/transport
+Redirect 301 /worldwide/delete-blood-cancer-uk.html http://www.deletebloodcancer.org.uk/
+Redirect 301 /worldwide/dkms-germany.html http://www.dkms.de/
+Redirect 301 /worldwide/dkms-poland.html  http://www.dkms.pl/
+Redirect 301 /worldwide/fundacion-dkms-espana.html http://www.deletebloodcancer.org/en
+Redirect 301 /about-us/tracking.html http://www.deletebloodcancer.org/en
+Redirect 301 /walgreens.html http://www.deletebloodcancer.org/en
+Redirect 301 /mavs http://www.deletebloodcancer.org/en
+Redirect 301 /mavs.html http://www.deletebloodcancer.org/en
+Redirect 301 /mavs/ http://www.deletebloodcancer.org/en
+Redirect 301 /lizards.html http://www.deletebloodcancer.org/en
+Redirect 301 /brooklyn.html http://www.deletebloodcancer.org/en
+Redirect 301 /july.html http://www.deletebloodcancer.org/en/july
+Redirect 301 /lls.html http://www.deletebloodcancer.org/en
+Redirect 301 /tiffany.html http://www.deletebloodcancer.org/en/Tiffany
+Redirect 301 /shira.html http://www.deletebloodcancer.org/en
+Redirect 301 /joon.html http://www.deletebloodcancer.org/en
+Redirect 301 /joon/joon-registration.html http://www.deletebloodcancer.org/en
+Redirect 301 /zahara.html http://www.deletebloodcancer.org/en/Zahara
+Redirect 301 /dental.html http://www.deletebloodcancer.org/en
+Redirect 301 /chase.html http://www.deletebloodcancer.org/en
+Redirect 301 /worldbloodcancerday.html http://www.deletebloodcancer.org/en
+
+
+# redirect all trailing slash urls to their non trailing slash counterparts
+RedirectMatch 301 ^/(.*)/$ /$1
+
+
 # Protect files and directories from prying eyes.
 <FilesMatch "\.(engine|inc|info|install|make|module|profile|test|po|sh|.*sql|theme|tpl(\.php)?|xtmpl)(~|\.sw[op]|\.bak|\.orig|\.save)?$|^(\..*|Entries.*|Repository|Root|Tag|Template|composer\.(json|lock))$|^#.*#$|\.php(~|\.sw[op]|\.bak|\.orig\.save)$">
   Order allow,deny
@@ -60,8 +244,13 @@ DirectoryIndex index.php index.html index.htm
   # if you enable "www." stripping or enforcement, in order to ensure that
   # you don't bounce between http and https.
   RewriteRule ^ - [E=protossl]
-  RewriteCond %{HTTPS} on
-  RewriteRule ^ - [E=protossl:s]
+# The default proto detection provided by Drupal does not work on our
+   # production server because it sits behind a load-balancing server.
+   # This additional RewriteCond makes sure we can detect the forwarded proto
+
+   RewriteCond %{HTTP:X-Forwarded-Proto} https [OR]
+   RewriteCond %{HTTPS} on
+   RewriteRule ^ - [E=protossl:s]
 
   # Make sure Authorization HTTP header is available to PHP
   # even when running as CGI or FastCGI.
