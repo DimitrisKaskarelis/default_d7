@@ -1,5 +1,6 @@
-# Ignore configuration files that may contain sensitive information.
-
-# Ignore paths that contain user-generated content.
+gnore paths that contain user-generated content.
+cache/
+files/
 sites/*/files
 sites/*/private
+sites/*/files-private
