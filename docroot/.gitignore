@@ -1,0 +1,6 @@
+gnore paths that contain user-generated content.
+cache/
+files/
+sites/*/files
+sites/*/private
+sites/*/files-private
