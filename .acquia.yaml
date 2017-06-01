@@ -1,0 +1,5 @@
+build-steps:
+  - hello:
+      type: script
+      script:
+        - echo "Hello, Pipelines!" > docroot/hello.txt
