@@ -1,5 +1,8 @@
-events: 
-  build:
-    steps: 
 version: "1.0.0"
-
+events:
+  build:
+    steps:
+      - build:
+          type: script
+          script:
+            - drush status
