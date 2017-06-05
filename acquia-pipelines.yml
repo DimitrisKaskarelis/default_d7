@@ -1,6 +1,9 @@
-version: 1.0.0
-build-steps:
-  - hello:
-      type: script
-      script:
-        - echo "Hello, Pipelines!" > docroot/hello.txt
+events: 
+  build-steps: 
+    - 
+      hello: 
+        script: 
+          - "echo \"Hello, Pipelines!\" > docroot/hello.txt"
+        type: script
+version: "1.0.0"
+
