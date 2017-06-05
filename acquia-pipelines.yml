@@ -1,9 +1,5 @@
 events: 
   build:
     steps: 
-      - build: 
-        script: 
-          - "echo \"Hello, Pipelines!\" > docroot/hello.txt"
-          type: script
 version: "1.0.0"
 
